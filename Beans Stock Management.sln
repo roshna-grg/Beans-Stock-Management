@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beans Stock Management", "Beans Stock Management\Beans Stock Management.csproj", "{7624CD28-4FC5-4FBC-B275-90A812DE5902}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7624CD28-4FC5-4FBC-B275-90A812DE5902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7624CD28-4FC5-4FBC-B275-90A812DE5902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7624CD28-4FC5-4FBC-B275-90A812DE5902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7624CD28-4FC5-4FBC-B275-90A812DE5902}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8D54572-1D39-41A9-A99E-B6A43B50BC1C}
+	EndGlobalSection
+EndGlobal

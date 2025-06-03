@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Beans_Stock_Management.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:transparent; border-color:transparent">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar" style="border-color:white"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/" style="font-family:'Great Vibes';font-size:26px; color:white; border-right: 2px solid #db3951">Beans<br />Stock</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/Category" style="font-family:Poppins; color:white; font-size:13px; border-right: 1px solid gray">Category</a></li>
+                        <li><a runat="server" href="~/Item" style="font-family:Poppins; color:white; font-size:13px; border-right: 1px solid gray">Item</a></li>
+                        <li><a runat="server" href="~/Customer" style="font-family:Poppins; color:white; font-size:13px; border-right: 1px solid gray">Customer</a></li>
+                        <li><a runat="server" href="~/StockPage" style="font-family:Poppins; color:white; font-size:13px; border-right: 1px solid gray">Stock</a></li>
+                        <li><a runat="server" href="~/OutOfStock" style="font-family:Poppins; color:white; font-size:13px; border-right: 1px solid gray">Out of Stock</a></li>
+                        <li><a runat="server" href="~/ManageStock" style="font-family:Poppins; color:white; font-size:13px; border-right: 1px solid gray">Manage Stock</a></li>
+                        <li><a runat="server" href="~/PurchaseDetails" style="font-family:Poppins; color:white; font-size:13px; border-right: 1px solid gray">Purchase Details</a></li>
+                        <li><a runat="server" href="~/Sales" style="font-family:Poppins; color:white; font-size:13px; border-right: 1px solid gray">Sales</a></li>
+                        <li><a runat="server" href="~/Details" style="font-family:Poppins; color:white; font-size:13px; border-right: 1px solid gray">Other Details</a></li>
+                        <li><a runat="server" href="~/Profile" style="font-family:Poppins; color:white; font-size:13px; border-right: 1px solid gray">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer style=" position: fixed;left: 0; bottom: 0; width: 100%; text-align: center; color:white;">
+                <p>&copy; <%: DateTime.Now.Year %> - Beans Stock Management System</p>
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>
