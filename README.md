@@ -1,6 +1,6 @@
 # 🫘 Beans Stock Management System
 
-A web-based stock management application developed as part of the **CS6004NP - Application Development** group coursework for the Bachelor's degree in IT.
+A web-based stock management application developed as part of the group coursework for the Bachelor's degree in IT.
 
 ## Technologies Used
 - **Frontend**: ASP.NET Web Forms
